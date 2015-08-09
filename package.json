@@ -1,0 +1,15 @@
+{
+  "name": "merge-params",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marak Squires <marak.squires@gmail.com",
+  "license": "MIT",
+  "description": "Middleware for merging all request query string, request.body, and route parameters into single scope",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bigcompany/merge-params.git"
+  }
+}
