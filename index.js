@@ -5,7 +5,7 @@
 module['exports'] = function mergeParams (req, res, next) {
 
   req.resource = req.resource || {};
-  req.resource.params = {};
+  req.resource.params = req.resource.params || {};
   req.body = req.body || {};
 
   //
@@ -17,7 +17,6 @@ module['exports'] = function mergeParams (req, res, next) {
       //req.resource.params[p] = req.params[p];
     });
   }
-
   if (typeof req.query === 'object') {
     Object.keys(req.query).forEach(function (p) {
       req.resource.params[p] = req.query[p];
